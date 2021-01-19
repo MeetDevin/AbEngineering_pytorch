@@ -1,0 +1,32 @@
+    Starting pre-processing of raw data...
+    Preprocessed file for default already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D ARG (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:A GLN (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H SER (' ', 215, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:B VAL (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:A ALA (' ', 113, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for default already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D ARG (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:A GLN (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H SER (' ', 215, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:B VAL (' ', 1, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:A ALA (' ', 113, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
