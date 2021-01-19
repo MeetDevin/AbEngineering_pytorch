@@ -11,12 +11,14 @@ import os.path
 import os
 import numpy as np
 import h5py
+import platform
 import sys
 import torch
 
 from utils.process_bar import show_process_realtime
 from utils.log_output import write_out
-from data.pdb_reader import parser_reader
+from data.pdb_parser import get_primary_tertiary
+from data.affinity_parser import get_affinity
 from utils.MyException import MyException
 
 MAX_SEQUENCE_LEN = 5000  # 氨基酸主链的最大队列长度, 即限定一个蛋白质最多有2,000个 amino acid
@@ -33,9 +35,9 @@ class H5Founder:
         self.dataset_id = dataset_id
         self.padding = padding
         self.force_overwrite = force_overwrite
-        self.traversal_raw_data()
+        self.traversal_PBDbind2019()
 
-    def traversal_raw_data(self):
+    def traversal_PBDbind2019(self):
         """
         Traversal raw data in data/raw/，and use function process_file() to read data in loop at the same time
         output preprocessed data in the format .hdf5 in data/preprocessed/
@@ -43,9 +45,10 @@ class H5Founder:
         write_out("Starting pre-processing of raw data...")
         # glob模块是最简单的模块之一，用它可以查找符合特定规则的文件 full path.
         # 查找文件只用到三个匹配符："*", "?", "[]"。"*"匹配0个或多个字符；"?"匹配单个字符；"[]"匹配指定范围内的字符，如：[0-9]匹配数字。
-        files_list = glob.glob(self.raw_data_dir)
+        files_list = glob.glob(self.raw_data_dir + '/*')
         files_filtered_list = filter_input_files(files_list)  # list['filename', ...]
 
+        affi_dic = get_affinity(file_path=self.raw_data_dir + '/index/INDEX_general_PP.2019')
         h5_name = "data/preprocessed/" + self.dataset_id + ".hdf5"
 
         # 如果 .hdf5 文件已经存在，选择强制写入还是跳过
@@ -84,8 +87,14 @@ class H5Founder:
 
         for file_path in file_list:
             # write_out("Writing ", file_path)
+            if platform.system() == 'Windows':
+                pdb_id = file_path.split('\\')[-1].replace('.ent.pdb', '')
+            else:
+                pdb_id = file_path.split('/')[-1].replace('.ent.pdb', '')
+
             try:
-                primary, tertiary, length = parser_reader(file_path)
+                primary, tertiary, length = get_primary_tertiary(file_path, pdb_id=pdb_id)
+                affinity = affi_dic(pdb_id)
             except MyException:
                 write_out('>skip this file due to MyException')
                 num_files -= 1
@@ -124,6 +133,7 @@ class H5Founder:
 
 def filter_input_files(input_files):
     disallowed_file_endings = (".gitignore", ".DS_Store")
+    allowed_file_endings = ".pdb"
     rate = 0.03
     partical_input_files = input_files[:int(len(input_files)*rate)]
-    return list(filter(lambda x: not x.endswith(disallowed_file_endings), partical_input_files))
+    return list(filter(lambda x: not x.endswith(disallowed_file_endings) and x.endswith(allowed_file_endings), partical_input_files))

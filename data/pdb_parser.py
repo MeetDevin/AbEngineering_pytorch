@@ -2,7 +2,7 @@
 """
 @author: Xin Zhang
 @contact: zhangxin@szbl.ac.cn
-@file: pdb_reader.py
+@file: pdb_parser.py
 @time: 12/8/20 11:36 AM
 @desc: read protein from .pdb
 Function parser_reader() return a structure object which defined in BioPython
@@ -25,7 +25,6 @@ a.get_fullname()   # atom name (with spaces, e.g. ".CA.")
 from Bio.PDB import is_aa
 from Bio.PDB.PDBParser import PDBParser
 import numpy as np
-import platform
 from utils.log_output import write_out
 from utils.MyException import MyException
 
@@ -66,16 +65,12 @@ def lines_reader():
 # pass
 
 
-def parser_reader(file_path):
+def get_primary_tertiary(file_path, pdb_id):
     # https://bioinformatics.stackexchange.com/questions/14101/extract-residue-sequence-from-pdb-file-in-biopython-but-open-to-recommendation
     p = PDBParser(QUIET=True)
 
-    if platform.system() == 'Windows':
-        structure_id = file_path.split('\\')[-1]
-    else:
-        structure_id = file_path.split('/')[-1]
     try:
-        structure = p.get_structure(file=file_path, id=structure_id)
+        structure = p.get_structure(file=file_path, id=pdb_id)
     except ValueError as ve:
         write_out(ve, file_path)
         raise MyException(ve)
@@ -112,4 +107,4 @@ def parser_reader(file_path):
     return np.asarray(primary), np.asarray(tertiary), length
 
 
-parser_reader(local_add + "1g7h.pdb")
+get_primary_tertiary(local_add + "1g7h.pdb")
