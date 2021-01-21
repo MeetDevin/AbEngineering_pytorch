@@ -62,3 +62,108 @@
     KeyError for  >chain:A ALA (' ', 113, ' ')
     >skip this file due to MyException
     Completed pre-processing.
+    Starting pre-processing of raw data...
+    Starting pre-processing of raw data...
+    Starting pre-processing of raw data...
+    Starting pre-processing of raw data...
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >skip this file due to MyException
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >skip this file due to MyException
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    KeyError for  >chain:D LYS (' ', 141, ' ')
+    >MyException, skip this file: /media/zhangxin/Raid0/dataset/PP/1a2k.ent.pdb
+    KeyError for  >chain:E PHE (' ', 57, ' ')
+    >MyException, skip this file: /media/zhangxin/Raid0/dataset/PP/1b27.ent.pdb
+    KeyError for  >chain:H GLU (' ', 1, ' ')
+    >MyException, skip this file: /media/zhangxin/Raid0/dataset/PP/4zpt.ent.pdb
+    Completed pre-processing.

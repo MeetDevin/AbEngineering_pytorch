@@ -91,7 +91,7 @@ def get_primary_tertiary(file_path, pdb_id):
                     ca = residue['CA'].get_coord()
                     c = residue['C'].get_coord()
                 except KeyError:
-                    write_out('KeyError for ', '>chain:' + chain_id, residue.resname, residue.get_id())
+                    write_out('> KeyError in ', '>chain:' + chain_id, residue.resname, residue.get_id())
                     raise MyException('KeyError for :'+residue.resname)
                 aa_coord = np.hstack([n, ca, c])
                 tertiary.append(aa_coord)
@@ -107,4 +107,4 @@ def get_primary_tertiary(file_path, pdb_id):
     return np.asarray(primary), np.asarray(tertiary), length
 
 
-get_primary_tertiary(local_add + "1g7h.pdb")
+# get_primary_tertiary(local_add + "1g7h.pdb")

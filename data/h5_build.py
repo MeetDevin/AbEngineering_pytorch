@@ -35,7 +35,23 @@ class H5Founder:
         self.dataset_id = dataset_id
         self.padding = padding
         self.force_overwrite = force_overwrite
-        self.traversal_PBDbind2019()
+
+        self.h5_name = "data/preprocessed/" + self.dataset_id + ".hdf5"
+        self.filenames, self.affinity_dic = self.traversal_PBDbind2019()
+
+        # 如果 .hdf5 文件已经存在，选择强制写入还是跳过
+        if os.path.isfile(self.h5_name):
+            write_out("Preprocessed file for " + self.dataset_id + " already exists.")
+            if self.force_overwrite:
+                write_out("force_pre_processing_overwrite flag set to True, "
+                          "overwriting old file...")
+                os.remove(self.h5_name)
+                self.construct_h5db_from_list()
+            else:
+                write_out("Skipping pre-processing...")
+        else:
+            self.construct_h5db_from_list()
+        write_out("Completed pre-processing.")
 
     def traversal_PBDbind2019(self):
         """
@@ -43,39 +59,25 @@ class H5Founder:
         output preprocessed data in the format .hdf5 in data/preprocessed/
         """
         write_out("Starting pre-processing of raw data...")
-        # glob模块是最简单的模块之一，用它可以查找符合特定规则的文件 full path.
-        # 查找文件只用到三个匹配符："*", "?", "[]"。"*"匹配0个或多个字符；"?"匹配单个字符；"[]"匹配指定范围内的字符，如：[0-9]匹配数字。
+        # glob 查找符合特定规则的文件 full path.
+        # 匹配符："*", "?", "[]"。"*"匹配0个或多个字符；"?"匹配单个字符；"[]"匹配指定范围内的字符，[0-9]匹配数字。
         files_list = glob.glob(self.raw_data_dir + '/*')
         files_filtered_list = filter_input_files(files_list)  # list['filename', ...]
 
-        affi_dic = get_affinity(file_path=self.raw_data_dir + '/index/INDEX_general_PP.2019')
-        h5_name = "data/preprocessed/" + self.dataset_id + ".hdf5"
+        affinity_dic = get_affinity(file_path=self.raw_data_dir + '/index/INDEX_general_PP.2019')
+        return files_filtered_list, affinity_dic
 
-        # 如果 .hdf5 文件已经存在，选择强制写入还是跳过
-        if os.path.isfile(h5_name):
-            write_out("Preprocessed file for " + self.dataset_id + " already exists.")
-            if self.force_overwrite:
-                write_out("force_pre_processing_overwrite flag set to True, "
-                          "overwriting old file...")
-                os.remove(h5_name)
-                self.process_file(files_filtered_list, h5_name)
-            else:
-                write_out("Skipping pre-processing...")
-        else:
-            self.process_file(files_filtered_list, h5_name)
-        write_out("Completed pre-processing.")
-
-    def process_file(self, file_list, h5_name):
+    def construct_h5db_from_list(self):
         """
         这个函数是在 process_raw_data 的循环里调用的，每一个文件会调用一次
         :param input_file: data/raw\\protein_net_testfile.txt
         :param h5_name: data/preprocessed/" + filename + ".hdf5
         """
         # create output file
-        file = h5py.File(h5_name, 'w')
+        file = h5py.File(self.h5_name, 'w')
         current_buffer_size = 1
         file_point = 0
-        num_files = len(file_list)
+        num_files = len(self.filenames)
 
         dataset_p = file.create_dataset(name='primary', shape=(current_buffer_size, MAX_SEQUENCE_LEN),
                                         maxshape=(MAX_DATASET_LEN, MAX_SEQUENCE_LEN),
@@ -83,9 +85,9 @@ class H5Founder:
         dataset_s = file.create_dataset(name='tertiary', shape=(current_buffer_size, MAX_SEQUENCE_LEN, 9),
                                         maxshape=(MAX_DATASET_LEN, MAX_SEQUENCE_LEN, 9), dtype='float')  # structures
         dataset_l = file.create_dataset(name='label', shape=(current_buffer_size, 1),
-                                        maxshape=(MAX_DATASET_LEN, 1), dtype='int')
+                                        maxshape=(MAX_DATASET_LEN, 1), dtype='float')
 
-        for file_path in file_list:
+        for file_path in self.filenames:
             # write_out("Writing ", file_path)
             if platform.system() == 'Windows':
                 pdb_id = file_path.split('\\')[-1].replace('.ent.pdb', '')
@@ -93,10 +95,10 @@ class H5Founder:
                 pdb_id = file_path.split('/')[-1].replace('.ent.pdb', '')
 
             try:
-                primary, tertiary, length = get_primary_tertiary(file_path, pdb_id=pdb_id)
-                affinity = affi_dic(pdb_id)
+                primary, tertiary, length = get_primary_tertiary(file_path, pdb_id=pdb_id)  # get structure
+                affinity = self.affinity_dic.get(pdb_id)  # get affinity
             except MyException:
-                write_out('>skip this file due to MyException')
+                write_out('> MyException occurred, skip this file: '+file_path)
                 num_files -= 1
                 continue
 
@@ -125,7 +127,7 @@ class H5Founder:
 
             dataset_p[file_point] = primary_padded
             dataset_s[file_point] = tertiary_padded
-            dataset_l[file_point] = length
+            dataset_l[file_point] = affinity
 
             show_process_realtime(file_point, num_files, name='trans h5')
             file_point += 1
