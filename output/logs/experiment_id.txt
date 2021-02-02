@@ -167,3 +167,245 @@
     KeyError for  >chain:H GLU (' ', 1, ' ')
     >MyException, skip this file: /media/zhangxin/Raid0/dataset/PP/4zpt.ent.pdb
     Completed pre-processing.
+    Starting pre-processing of raw data...
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    Skipping pre-processing...
+    Completed pre-processing.
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    num of raw data:  77
+    > KeyError in  >chain:D LYS (' ', 141, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1a2k.ent.pdb
+    > KeyError in  >chain:E PHE (' ', 57, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1b27.ent.pdb
+    Starting pre-processing of raw data...
+    Preprocessed file for pb_pp2019 already exists.
+    force_pre_processing_overwrite flag set to True, overwriting old file...
+    num of raw data:  2594
+    > KeyError in  >chain:D LYS (' ', 141, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1a2k.ent.pdb
+    > KeyError in  >chain:E PHE (' ', 57, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1b27.ent.pdb
+    > KeyError in  >chain:H GLU (' ', 1, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4zpt.ent.pdb
+    > KeyError in  >chain:B GLY (' ', 105, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5l8j.ent.pdb
+    > KeyError in  >chain:A GLY (' ', 419, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5lcv.ent.pdb
+    > KeyError in  >chain:A LEU (' ', 130, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1uuz.ent.pdb
+    > KeyError in  >chain:A SER (' ', 143, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4i18.ent.pdb
+    > KeyError in  >chain:A ILE (' ', 1012, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2wby.ent.pdb
+    > KeyError in  >chain:B GLU (' ', 667, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2wfx.ent.pdb
+    Dropping protein as length too long: 7128
+    > KeyError in  >chain:A PRO (' ', 244, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2wub.ent.pdb
+    > KeyError in  >chain:A PRO (' ', 244, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2wuc.ent.pdb
+    Dropping protein as length too long: 5416
+    > KeyError in  >chain:I MET (' ', 20, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1tm3.ent.pdb
+    > KeyError in  >chain:I MET (' ', 20, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1tm4.ent.pdb
+    > KeyError in  >chain:I MET (' ', 20, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1tm5.ent.pdb
+    > KeyError in  >chain:I MET (' ', 20, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1to1.ent.pdb
+    Dropping protein as length too long: 10262
+    > KeyError in  >chain:A VAL (' ', 208, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1us7.ent.pdb
+    > KeyError in  >chain:F ILE (' ', 154, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1usv.ent.pdb
+    Dropping protein as length too long: 5608
+    > KeyError in  >chain:C LEU (' ', 595, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5x0w.ent.pdb
+    > KeyError in  >chain:D ASP (' ', 228, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4pj8.ent.pdb
+    > KeyError in  >chain:B PHE (' ', 113, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5dfv.ent.pdb
+    > KeyError in  >chain:M LEU (' ', 55, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4boh.ent.pdb
+    > KeyError in  >chain:B VAL (' ', 555, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3gjn.ent.pdb
+    > KeyError in  >chain:I VAL (' ', 868, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5oo6.ent.pdb
+    > KeyError in  >chain:D ASP (' ', 3, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5otj.ent.pdb
+    > KeyError in  >chain:C ALA (' ', 1, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5swz.ent.pdb
+    > KeyError in  >chain:A ASP (' ', 1, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1zvy.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 135, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4uuz.ent.pdb
+    > KeyError in  >chain:A LEU (' ', 144, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4uyq.ent.pdb
+    > KeyError in  >chain:A GLN (' ', 385, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1gng.ent.pdb
+    > KeyError in  >chain:B ARG (' ', 201, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1gpw.ent.pdb
+    > KeyError in  >chain:D LYS (' ', 503, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1hqr.ent.pdb
+    > KeyError in  >chain:g SER (' ', 6, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4fao.ent.pdb
+    > KeyError in  >chain:G ASN (' ', 87, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5uv8.ent.pdb
+    > KeyError in  >chain:A GLY (' ', -2, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5v5g.ent.pdb
+    > KeyError in  >chain:B LYS (' ', 77, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5v5h.ent.pdb
+    > KeyError in  >chain:A LYS (' ', 326, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1qfu.ent.pdb
+    > KeyError in  >chain:B ASP (' ', 112, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1qfw.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 677, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2c5d.ent.pdb
+    > KeyError in  >chain:B ARG (' ', 74, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2c7m.ent.pdb
+    > KeyError in  >chain:A GLN (' ', 73, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2c7n.ent.pdb
+    > KeyError in  >chain:A GLY (' ', 42, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2cmr.ent.pdb
+    > KeyError in  >chain:A HIS (' ', 122, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3eba.ent.pdb
+    > KeyError in  >chain:F GLY (' ', 109, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3etb.ent.pdb
+    > KeyError in  >chain:A ARG (' ', 34, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3f50.ent.pdb
+    > KeyError in  >chain:I MET (' ', 20, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1y3b.ent.pdb
+    > KeyError in  >chain:I MET (' ', 20, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1y48.ent.pdb
+    > KeyError in  >chain:G PRO (' ', 757, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3vux.ent.pdb
+    > KeyError in  >chain:D GLN (' ', 192, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4p46.ent.pdb
+    > KeyError in  >chain:W ALA (' ', 4, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4u30.ent.pdb
+    > KeyError in  >chain:C ILE (' ', 1134, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5fo9.ent.pdb
+    > KeyError in  >chain:A GLY (' ', 139, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5fw5.ent.pdb
+    > KeyError in  >chain:A ARG (' ', 126, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5g1x.ent.pdb
+    Dropping protein as length too long: 5704
+    > KeyError in  >chain:F PRO (' ', 132, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3twi.ent.pdb
+    > KeyError in  >chain:A ASP (' ', 131, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4q96.ent.pdb
+    > KeyError in  >chain:B ARG (' ', 140, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4rjf.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 31, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5ky4.ent.pdb
+    > KeyError in  >chain:A GLY (' ', 117, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1dzb.ent.pdb
+    > KeyError in  >chain:A ILE (' ', 317, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/6ii4.ent.pdb
+    > KeyError in  >chain:C ILE (' ', 317, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/6ii9.ent.pdb
+    > KeyError in  >chain:A PRO (' ', 276, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2v2w.ent.pdb
+    Dropping protein as length too long: 6676
+    > KeyError in  >chain:A PRO (' ', 445, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2j6e.ent.pdb
+    > KeyError in  >chain:B LEU (' ', 224, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2jix.ent.pdb
+    > KeyError in  >chain:f SER (' ', 1, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5vcb.ent.pdb
+    Dropping protein as length too long: 7374
+    > KeyError in  >chain:A LYS (' ', 62, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1uwx.ent.pdb
+    > KeyError in  >chain:A ASP (' ', 665, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1v18.ent.pdb
+    Dropping protein as length too long: 5280
+    > KeyError in  >chain:A HIS (' ', 362, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1vyt.ent.pdb
+    > KeyError in  >chain:E GLU (' ', 561, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1w1w.ent.pdb
+    > KeyError in  >chain:A GLN (' ', 1, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1zmy.ent.pdb
+    > KeyError in  >chain:J SER (' ', 130, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3l89.ent.pdb
+    Dropping protein as length too long: 6435
+    > KeyError in  >chain:A GLY (' ', 174, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2wwx.ent.pdb
+    > KeyError in  >chain:A GLY (' ', 895, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2xbb.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 617, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2xhe.ent.pdb
+    > KeyError in  >chain:A THR (' ', 147, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2y6t.ent.pdb
+    > KeyError in  >chain:A MET (' ', 14, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2y9m.ent.pdb
+    > KeyError in  >chain:B ILE (' ', 101, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3hpw.ent.pdb
+    > KeyError in  >chain:B GLU (' ', 123, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3idb.ent.pdb
+    > KeyError in  >chain:B GLU (' ', 128, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3idc.ent.pdb
+    Dropping protein as length too long: 5542
+    > KeyError in  >chain:D VAL (' ', 385, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/5nzz.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 497, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2omt.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 496, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2omv.ent.pdb
+    > KeyError in  >chain:B ALA (' ', 101, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2omw.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 496, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2omy.ent.pdb
+    > KeyError in  >chain:A GLY (' ', 497, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2omz.ent.pdb
+    > KeyError in  >chain:A ASP (' ', 462, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2w19.ent.pdb
+    Dropping protein as length too long: 5569
+    > KeyError in  >chain:A GLN (' ', 8, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4en3.ent.pdb
+    > KeyError in  >chain:D GLN (' ', 192, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4p23.ent.pdb
+    > KeyError in  >chain:C HIS (' ', 96, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1ob1.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 801, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1ogy.ent.pdb
+    > KeyError in  >chain:I ARG (' ', 1, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2ftl.ent.pdb
+    > KeyError in  >chain:B ILE (' ', 101, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3g7z.ent.pdb
+    > KeyError in  >chain:A PRO (' ', 1062, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3gb8.ent.pdb
+    > KeyError in  >chain:A PRO (' ', 150, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2vof.ent.pdb
+    > KeyError in  >chain:A LYS (' ', 108, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2vwe.ent.pdb
+    > KeyError in  >chain:A ALA (' ', 110, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/2vyr.ent.pdb
+    > KeyError in  >chain:K ALA (' ', 115, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4bxz.ent.pdb
+    Dropping protein as length too long: 5040
+    > KeyError in  >chain:B ALA (' ', 1578, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4cc4.ent.pdb
+    > KeyError in  >chain:A GLY (' ', 85, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3mac.ent.pdb
+    > KeyError in  >chain:A VAL (' ', 177, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1ibr.ent.pdb
+    > KeyError in  >chain:L ASP (' ', 14, 'L')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1ihs.ent.pdb
+    > KeyError in  >chain:A SER (' ', 12, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3crk.ent.pdb
+    > KeyError in  >chain:C THR (' ', 222, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/3v6o.ent.pdb
+    Dropping protein as length too long: 11292
+    > KeyError in  >chain:C ALA (' ', 167, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1fc2.ent.pdb
+    > KeyError in  >chain:A ASN (' ', 419, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/1x75.ent.pdb
+    > KeyError in  >chain:C THR (' ', 107, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4pjd.ent.pdb
+    > KeyError in  >chain:C TYR (' ', 254, ' ')
+    > MyException occurred, skip this file: /media/zhangxin/Raid0/dataset/PP/4pjh.ent.pdb
+    Completed pre-processing.
+    construct dataloader... total:  2476 ,  5  per batch.

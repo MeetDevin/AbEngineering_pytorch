@@ -19,6 +19,7 @@ dataloader = construct_dataloader_from_h5(filename='data/preprocessed/pb_pp2019.
 
 
 for primary, tertiary, label in dataloader:
+    print('print affinities in batch:')
     print(label)
     pass
 pass

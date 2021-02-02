@@ -78,6 +78,7 @@ class H5Founder:
         current_buffer_size = 1
         file_point = 0
         num_files = len(self.filenames)
+        write_out('num of raw data: ', num_files)
 
         dataset_p = file.create_dataset(name='primary', shape=(current_buffer_size, MAX_SEQUENCE_LEN),
                                         maxshape=(MAX_DATASET_LEN, MAX_SEQUENCE_LEN),
@@ -136,6 +137,6 @@ class H5Founder:
 def filter_input_files(input_files):
     disallowed_file_endings = (".gitignore", ".DS_Store")
     allowed_file_endings = ".pdb"
-    rate = 0.03
+    rate = 1
     partical_input_files = input_files[:int(len(input_files)*rate)]
     return list(filter(lambda x: not x.endswith(disallowed_file_endings) and x.endswith(allowed_file_endings), partical_input_files))

@@ -9,13 +9,13 @@
 
 import h5py
 import torch
-import numpy as np
+from utils.log_output import write_out
 from torch.utils.data import DataLoader
 
 
 def construct_dataloader_from_h5(filename, batch_size):
     dataset = H5PytorchDataset(filename)
-    print('construct dataloader as samples: ', dataset.__len__())
+    write_out('construct dataloader... total: ', dataset.__len__(), ', ', batch_size, ' per batch.')
     return torch.utils.data.DataLoader(H5PytorchDataset(filename),
                                        batch_size=batch_size,
                                        shuffle=True,
